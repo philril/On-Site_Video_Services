@@ -4,16 +4,16 @@ ourApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
       when('/', {
-        templateUrl: 'partials/splash.html'
-      }).
-      when('/signin', {
-        templateUrl: 'partials/signin.html'
-      }).
-      when('/signup', {
-        templateUrl: 'partials/signup.html'
-      }).
-      when('/home', {
         templateUrl: 'partials/home.html'
+      }).
+      when('/contact', {
+        templateUrl: 'partials/contact.html'
+      }).
+      when('/about', {
+        templateUrl: 'partials/about.html'
+      }).
+      when('/testimonials', {
+        templateUrl: 'partials/testimonials.html'
       }).
       otherwise({
         redirectTo: '/'

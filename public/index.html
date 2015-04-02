@@ -9,9 +9,12 @@
 </head>
 
 <body ng-app="ourApp">
-    <div>
-
-    </div>
+    <h1>On-Site Video</h1>
+    <nav>
+        <ul class="nav nav-pills" ng-controller="TabsCtrl">
+            <li ng-class="tabClass(tab)" ng-repeat="tab in tabs" tab="tab"><a href="{{tab.link}}" ng-click="setSelectedTab(tab)">{{tab.label}}</a></li>
+        </ul>
+    </nav>
 
     <div ng-view></div>
 
