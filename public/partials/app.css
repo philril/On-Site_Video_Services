@@ -30,6 +30,9 @@ h1 {
 
 .page {
   text-align: center;
+  top:25px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 nav ul {
@@ -76,4 +79,40 @@ nav li {
 
 iframe {
   background:rgba(0,0,0,0.5);
+  margin:0 auto;
+}
+
+.list {
+  display:inline-block;
+  margin: 10;
+  padding:5px;
+  width: 40%;
+  border-radius: 50px;
+  background: rgba(0,0,0,0.5);
+}
+
+.lists {
+  margin:0 auto;
+  width:70%;
+}
+
+.contact {
+  display:inline-block;
+  margin: auto 50;
+  padding:5px;
+  width: 30%;
+  border-radius: 50px;
+  background: rgba(0,0,0,0.5);
+  top:175px;
+  position: relative
+}
+
+a {
+  text-decoration: none;
+  color:white;
+}
+
+a:hover {
+  text-decoration: underline;
+  color:white;
 }
