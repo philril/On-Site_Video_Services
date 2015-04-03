@@ -4,19 +4,19 @@ ourApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
       when('/', {
-        templateUrl: 'partials/home.html',
+        templateUrl: 'public/partials/home.html',
         activePage: '#/'
       }).
       when('/contact', {
-        templateUrl: 'partials/contact.html',
+        templateUrl: 'public/partials/contact.html',
         activePage: '#/contact'
       }).
       when('/about', {
-        templateUrl: 'partials/about.html',
+        templateUrl: 'public/partials/about.html',
         activePage: '#/about'
       }).
       when('/testimonials', {
-        templateUrl: 'partials/testimonials.html',
+        templateUrl: 'public/partials/testimonials.html',
         activePage: '#/testimonials'
       }).
       otherwise({
