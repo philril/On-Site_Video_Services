@@ -7,7 +7,24 @@
 
   <!-- CREATE BOOTSTRAP MODAL FOR VIDEO!! -->
   <!-- INCLUDE NORMALIZE CSS!! -->
-  <div class="youtube" id="u710aRep9KA" style="width: 700px; height: 465px;"></div>
+  <a data-toggle="modal" data-target="#myModal">
+    <div class="youtube" style="width: 700px; height: 465px; display:none"><img src="http://i.ytimg.com/vi/u710aRep9KA/hqdefault.jpg"></div>
+  </a>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+          <iframe width="750" height="465" src="https://www.youtube.com/embed/u710aRep9KA" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+      </div>
+    </div>
+  </div>
 
   </div>
 
