@@ -24,7 +24,8 @@ body {
 h1 {
   text-align: center;
   font-weight: bold;
-  font-size: 3em
+  font-size: 4em;
+  font-family:Copperplate
 }
 
 .page {
@@ -45,9 +46,20 @@ nav li {
   list-style-type: none;
 }
 
-.nav-pills > li.active > a {
-  /*background-color:transparent;
-  border: 1px solid black;*/
+.nav-pills>li>a {
+  border-color: #777777;
+  color:white;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+  color: white;
+  background-color: transparent;
+  border: 1.5px solid white;
+}
+
+.nav-pills>li>a:hover {
+  border-color: #000000;
+  background-color: rgba(0,0,0,0.5);
 }
 
 .quote {
