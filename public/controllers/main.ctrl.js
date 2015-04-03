@@ -1,4 +1,11 @@
-ourApp.controller("TabsCtrl", ['$scope', '$http', '$route','$cookies', '$location', function($scope, $http, $route, $cookies, $location){
+ourApp.controller("NavCtrl", ['$scope', '$http', '$route','$cookies', '$location', function($scope, $http, $route, $cookies, $location){
+
+    $(document).ready(function(){
+        console.log("ready!")
+        $('iframe').fadeIn()
+    })
+
+    $scope.$route = $route;
 
     $scope.tabs = [
         { link : '#/', label : 'Home' },
@@ -6,18 +13,5 @@ ourApp.controller("TabsCtrl", ['$scope', '$http', '$route','$cookies', '$locatio
         { link : '#/testimonials', label : 'Testimonials' },
         { link : '#/contact', label : 'Contact' }
       ];
-
-    $scope.selectedTab = $scope.tabs[0];
-    $scope.setSelectedTab = function(tab) {
-      $scope.selectedTab = tab;
-    }
-
-    $scope.tabClass = function(tab) {
-      if ($scope.selectedTab == tab) {
-        return "active";
-      } else {
-        return "";
-      }
-    }
 
 }]);

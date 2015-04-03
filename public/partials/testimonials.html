@@ -1,9 +1,11 @@
-<section class="page">
-  <h4>We believe our work speaks for itself. But our customers still have plenty to say</h4>
-  <h5>"I'm so happy and impressed"</h5>
-  <p>- Mr. Guy</p>
-  <h5>"Me too"</h5>
-  <p>- Other dude</p>
-  <h5>"Good work!"</h5>
-  <p>- Bld Mgr</p>
+<section class="page" ng-controller="TestimonialsCtrl">
+  <h4>We believe our work speaks for itself. But our customers still have plenty to say about us</h4>
+
+  <p>{{what}}</p>
+
+  <div class="quote" ng-repeat="testimonial in testimonials">
+    <h4>{{testimonial.quote}}</h4>
+    <h5>- {{testimonial.attribution}}</h5>
+  </div>
+
 </section>
