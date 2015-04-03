@@ -57,3 +57,11 @@ nav li {
   border-radius: 50px;
   background: rgba(0,0,0,0.5);
 }
+
+.youtube {
+  margin:0 auto;
+}
+
+iframe {
+  background:rgba(0,0,0,0.5);
+}
