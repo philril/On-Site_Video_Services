@@ -2,7 +2,6 @@ ourApp.controller("MainCtrl", ['$scope', '$http', '$route','$cookies', '$locatio
 
   //CREATE BOOTSTRAP MODAL FOR VIDEO
     $(document).ready(function(){
-      console.log("yeah")
         $('.youtube').fadeIn(600)
       }
     )
