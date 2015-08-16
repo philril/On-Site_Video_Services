@@ -9,8 +9,9 @@
 </head>
 
 <body ng-app="ourApp">
-    <h1>Toolbox Video</h1>
     <nav>
+    <h1><a href="/#/">Toolbox Video Services</a></h1>
+    <!-- <h3>Professional. Fast. Easy</h3> -->
         <ul class="nav nav-pills" ng-controller="NavCtrl">
             <li ng-class="{'active': $route.current.activePage == '{{tab.link}}' }" ng-repeat="tab in tabs" tab="tab"><a href="{{tab.link}}" ng-click="setSelectedTab(tab)">{{tab.label}}</a></li>
         </ul>

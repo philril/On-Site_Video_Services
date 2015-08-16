@@ -1,9 +1,14 @@
-<section class="page" ng-controller="TestimonialsCtrl">
-  <h4>We believe our work speaks for itself. But our customers still have plenty to say about us:</h4>
+<section class="text" ng-controller="TestimonialsCtrl">
 
-  <p>{{what}}</p>
+  <div>
+    <h2>Testimonials</h2>
+  </div>
 
-  <div class="quote" ng-repeat="testimonial in testimonials">
+  <div class="list-item">
+    <h4>We believe our work speaks for itself. But our customers still have plenty to say about us:</h4>
+  </div>
+
+  <div class="list-item" ng-repeat="testimonial in testimonials">
     <h4>{{testimonial.quote}}</h4>
     <h5>- {{testimonial.attribution}}</h5>
   </div>

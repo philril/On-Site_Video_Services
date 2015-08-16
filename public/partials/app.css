@@ -13,7 +13,25 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-image: url("http://www.anothercity.ru/en/images/stories/roofs/84-mercury/3.jpg");
+  background-image: url('../images/workers.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+  position:relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color:inherit
+}
+
+a:visited {
+  text-decoration: none;
+  color:inherit
 }
 
 body {
@@ -25,25 +43,55 @@ h1 {
   text-align: center;
   font-weight: bold;
   font-size: 4em;
-  font-family:Copperplate
+  font-family:Copperplate;
+  display: inline-block;
+  margin: 0px;
+  padding-left: 20px;
 }
 
-.page {
-  text-align: center;
-  top:25px;
-  width: 80%;
-  margin: 0 auto;
+nav {
+  background-color: rgba(0,0,0,0.5);
+  position:relative;
 }
 
 nav ul {
-  text-align: center;
-  margin: 0 auto;
-  display: table;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
 }
 
 nav li {
   display: table-cell;
 }
+
+/*.content {
+  position:relative;
+}*/
+
+.text {
+  position: absolute;
+  bottom: 0;
+  padding: 20px 50px 50px 50px;
+  background-color: rgba(0,0,0,0.5);
+  -webkitbox-shadow: 50px 50px 50px 50px black;
+  box-shadow: 50px 50px 50px 50px black;
+  font-size: 1.25em;
+  width:100%;
+}
+
+/*.text .list-item {
+  background-color: rgba(18, 18, 18, 0.5);
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.text .list-item:nth-child(even) {
+  background-color: rgba(49, 49, 49, 0.5);
+  color: white;
+}*/
+
 
 .page ul {
   list-style-type: none;
@@ -98,13 +146,13 @@ iframe {
 
 .contact {
   display:inline-block;
-  margin: auto 50;
+  /*margin: auto 50;*/
   padding:5px;
   width: 30%;
   border-radius: 50px;
   background: rgba(0,0,0,0.5);
-  top:175px;
-  position: relative
+  /*top:175px;*/
+  /*position: relative*/
 }
 
 a {
