@@ -1,11 +1,12 @@
 ourApp.controller("MainCtrl", ['$scope', '$http', '$route','$cookies', '$location', function($scope, $http, $route, $cookies, $location){
 
-  //CREATE BOOTSTRAP MODAL FOR VIDEO
-    $(document).ready(function(){
-      console.log("yeah")
-        $('.youtube').fadeIn(600)
-      }
-    )
+  $scope.mainImages = ['./public/images/parking_lot.jpg',2,3]
+
+  // $(document).ready(function(){
+  //   console.log("yeah")
+  //     $('.youtube').fadeIn(600)
+  //   }
+  // )
 
 }]);
 
