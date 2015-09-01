@@ -6,3 +6,9 @@ Website built for Toolbox Video, a local company that provides video services to
 ##### This website is built using the following technologies:
 - Angular.js
 - Express.js
+
+#### TODO
+- hamburder menu
+- carousel
+- better color scheme
+- transparent background logo
