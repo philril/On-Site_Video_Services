@@ -12,9 +12,8 @@
 <body ng-app="ourApp">
     <nav>
     <a href="/ToolboxVideo/#/"><img src="./public/images/TOOLBOX_VIDEO_WHITE_LOGO_BLACK_BACKGROUND.png" alt="Logo" class="logo_img_nav"><img src="./public/images/TOOLBOX_VIDEO_TEXT_NO_BACKGROUND.png"></a>
-    <!-- <h3>Professional. Fast. Easy</h3> -->
         <ul class="nav nav-pills" ng-controller="NavCtrl">
-            <li ng-class="{'active': $route.current.activePage == '{{tab.link}}' }" ng-repeat="tab in tabs" tab="tab"><a href="{{tab.link}}" ng-click="setSelectedTab(tab)">{{tab.label}}</a></li>
+            <li ng-repeat="tab in tabs" tab="tab"><a ng-click="scrollTo({{tab.link}})">{{tab.label}}</a></li>
         </ul>
     </nav>
 
@@ -28,7 +27,6 @@
     <script src="public/vendor/angular-route.js"></script>
     <script src="public/vendor/angular-cookies.js"></script>
     <script src="public/vendor/moment.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/angular-carousel/dist/angular-carousel.js"></script>
 

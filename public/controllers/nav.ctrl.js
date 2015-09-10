@@ -1,12 +1,16 @@
-ourApp.controller("NavCtrl", ['$scope', '$http', '$route','$cookies', '$location', function($scope, $http, $route, $cookies, $location){
-
-    $scope.$route = $route;
+ourApp.controller("NavCtrl", ['$scope', '$http','$cookies', '$location', '$anchorScroll', function($scope, $http, $cookies, $location, $anchorScroll){
 
     $scope.tabs = [
-        { link : '#/', label : 'Home' },
-        { link : '#/about', label : 'About' },
-        { link : '#/testimonials', label : 'Testimonials' },
-        { link : '#/contact', label : 'Contact' }
+        { link : 'home', label : 'Home' },
+        { link : 'about', label : 'About' },
+        { link : 'testimonials', label : 'Testimonials' },
+        { link : 'contact', label : 'Contact' }
       ];
+
+    $scope.scrollTo = function(id) {
+      console.log('eay')
+      $location.hash(id);
+      $anchorScroll();
+    }
 
 }]);

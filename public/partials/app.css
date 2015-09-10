@@ -194,12 +194,14 @@ h3 {
 }
 
 .youtube {
-  margin:0 auto;
+  display: inline-block;
+  width: 400px
 }
 
 iframe {
   background:rgba(0,0,0,0.5);
   margin:0 auto;
+  display: inherit;
 }
 
 .lists {
