@@ -4,36 +4,143 @@
     <title>Toolbox Video</title>
     <link rel="stylesheet" type="text/css" href="public/vendor/normalize.css">
     <link rel="stylesheet" type="text/css" href="public/vendor/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="public/partials/app.css">
-    <link rel="stylesheet" type="text/css" href="public/vendor/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="bower_components/angular-carousel/dist/angular-carousel.css">
+    <link rel="stylesheet" type="text/css" href="app.css">
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 
-<body ng-app="ourApp">
+<body>
     <nav>
-    <a href="/ToolboxVideo/#/"><img src="./public/images/TOOLBOX_VIDEO_WHITE_LOGO_BLACK_BACKGROUND.png" alt="Logo" class="logo_img_nav"><img src="./public/images/TOOLBOX_VIDEO_TEXT_NO_BACKGROUND.png"></a>
-        <ul class="nav nav-pills" ng-controller="NavCtrl">
-            <li ng-repeat="tab in tabs" tab="tab"><a ng-click="scrollTo({{tab.link}})">{{tab.label}}</a></li>
+    <img src="images/TOOLBOX_VIDEO_WHITE_LOGO_BLACK_BACKGROUND.png" alt="Logo" class="logo_img_nav"><img src="images/TOOLBOX_VIDEO_TEXT_NO_BACKGROUND.png">
+        <ul class="nav nav-pills">
+            <li><a href="#about">About</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <div ng-view></div>
+
+    <section>
+      <div class="sectionbox_1">
+        <div class="your-class">
+          <div><img src="images/workers.jpg" style="height:400px"></div>
+          <div><img src="images/parking-lot.jpg" style="height:400px"></div>
+          <div>your content</div>
+        </div>
+      </div>
+      <div class="sectionbox_2">
+        <div class="main-text-wrapper">
+          <div class="textbox">
+            <h1>Professional. Fast. Easy.</h1>
+            <p>Toolbox Video Services creates professionally shot and edited videos of Operations & Maintenance training sessions. We believe your future hires deserve the same straight-from-the-source training that your original staff had.</p>
+            <p>See why clients like D&H Construction and Eden Housing rely on us to help keep staff at their best. Let Toolbox Video transform your O&M training with professionally produced HD videos. You will see the difference.</p>
+          </div>
+        </div>
+      </div>
+      <div class="sectionbox_text">
+        <div class="main-text-wrapper">
+            <img src="images/TOOLBOX_VIDEO_WHITE_LOGO_BLACK_BACKGROUND.png" alt="Logo" class="logo_img">
+
+            <!-- Modal Image -->
+            <a data-toggle="modal" data-target="#myModal">
+              <div class="youtube"><img src="http://i.ytimg.com/vi/u710aRep9KA/hqdefault.jpg"></div>
+            </a>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+
+                  <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+                    <iframe width="750" height="465" src="https://www.youtube.com/embed/u710aRep9KA" frameborder="0" allowfullscreen></iframe>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!-- end modal -->
+
+        </div>
+      </div>
+      <div class="sectionbox_3">
+        <div class="main-text-wrapper">
+          <a name="about"></a>
+          <h1>About</h1>
+          <div class="list-item">
+            <h4>Charles and Martin have a close working relationship that dates back to the mid 1990’s. They know each other's strengths well and have organized the business to take full advantage of each of their talents. Toolbox Video runs flawlessly because of their ability to spend multiple days together on shoots and in the editing bay.</h4>
+          </div>
+
+          <div class="list-item">
+              <h3>How it Works</h3>
+            <h4>Toolbox creates professional videos using pro-level video and audio recording equipment, and editing software to give you professional quality at reasonable prices. Everything needed for the shoot arrives on site with us – including multiple pro-level cameras, microphones, lighting equipment, and a great attitude that puts your subs and contractors at ease when in front of our cameras. We are punctual, reliable, professional, and fast.</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="sectionbox_4">
+        <div class="main-text-wrapper">
+          <a name="testimonials"></a>
+          <h1>Testimonials</h1>
+
+          <div class="list-item">
+            <h4>We believe our work speaks for itself. But our customers still have plenty to say about us:</h4>
+          </div>
+
+          <div class="list">
+            <div class="list-item" ng-repeat="testimonial in testimonials">
+              <h4>"Super Duper!"</h4>
+              <h5>- Some Guy</h5>
+
+              <h4>"Super!"</h4>
+              <h5>- Some Other Guy</h5>
+
+              <h4>"Somewhat Super!"</h4>
+              <h5>- Somebody</h5>
+
+              <h4>"Adequately Super!"</h4>
+              <h5>- Guy</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sectionbox_5">
+        <div class="main-text-wrapper">
+          <a name="contact"></a>
+          <h1>Contact</h1>
+
+          <div class="list-item">
+            <h4>Contact us for more information about our services. We would be appy to provide you with a quote, advice, or guidance.</h4>
+          </div>
+
+          <div class="list">
+
+            <div class="list-item">
+              <h3>Phone</h3>
+              <h5>123-4567</h5>
+            </div>
+
+            <div class="list-item">
+              <a href="mailto:videos@video.com?Subject=Quote%Request">
+                <h3>Email</h3>
+                <h5>videos@videos.video</h5>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
 
     <!-- VENDOR -->
     <script src="public/vendor/jquery.js"></script>
     <script src="public/vendor/bootstrap.js"></script>
-    <script src="public/vendor/angular.js"></script>
-    <script src="public/vendor/angular-sanitize.js"></script>
-    <script src="public/vendor/angular-route.js"></script>
-    <script src="public/vendor/angular-cookies.js"></script>
-    <script src="public/vendor/moment.js"></script>
-    <script src="bower_components/angular-touch/angular-touch.js"></script>
-    <script src="bower_components/angular-carousel/dist/angular-carousel.js"></script>
+    <script src="app.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
 
-    <!-- CUSTOM -->
-    <script src="public/controllers/init.js"></script>
-    <script src="public/controllers/nav.ctrl.js"></script>
-    <script src="public/controllers/main.ctrl.js"></script>
-    <script src="public/controllers/testimonials.ctrl.js"></script>
 </body>
 </html>
