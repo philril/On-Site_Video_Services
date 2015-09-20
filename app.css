@@ -1,12 +1,14 @@
 body {
   color:white;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Verdana, Geneva, sans-serif;
-  height:100%;
+  height:100vh;
   width:100%;
   background-color: gainsboro;
   font-size:2em;
   margin:0px;
   padding-top:0px;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -49,10 +51,35 @@ img {
   color: black !important
 }
 
-nav {
-  background-color: #373535;
+footer {
+  height:75px;
+  background-color:#31231b;
   position:relative;
-  font-size: 16px
+}
+
+footer div {
+  width:100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size:13px;
+  padding:10px;
+}
+
+footer div p {
+  display:inline-block;
+  padding: 10px 10px 10px 10px;
+  margin:0px;
+}
+
+footer div p a {
+  color:white;
+}
+
+nav {
+  background-color: #31231b;
+  position:relative;
+  font-size: 16px;
   height:114px
 }
 
@@ -70,6 +97,7 @@ nav li {
 .main-wrapper {
   text-align: center;
   width:1100px;
+
   margin:0 auto;
   height:100%;
 }
@@ -83,7 +111,8 @@ nav li {
 }*/
 
 .logo_img {
-  width:500px;
+  width:45%;
+  padding:35px;
 }
 
 .text {
@@ -91,7 +120,7 @@ nav li {
 }
 
 .sectionbox_1 {
-  padding:10px;
+  /*padding:10px;*/
   height:400px;
   width:100%;
   position:relative;
@@ -119,24 +148,47 @@ nav li {
 
 .sectionbox_2 {
   padding:10px;
-  color:#373535;
-  background-color: gainsboro;
+  color:white;
+  background-color: #31231b;
   font-size: 20px;
   width:100%;
 }
 
 .sectionbox_text {
-  background-color: #373535
+  background-color: gainsboro;
 }
 
 section {
-  padding:10px;
+  overflow: auto;
   color:#373535;
   width:100%;
+  -webkit-flex:1;
+  flex:1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.logo-image {
-  width:300px;
+.slick-dots {
+  bottom:0px !important;
+}
+
+.slick-dots li button:before {
+  color:white !important;
+  opacity:0.75 !important;
+}
+
+.title h1 {
+  padding-top: 20px;
+  padding-bottom:10px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+}
+
+.title p {
+  text-align: center;
+  color:black;
 }
 
 .logo-image-wrapper {
@@ -151,6 +203,7 @@ section {
 
 .main-text-wrapper h1 {
   text-align: center;
+  font-weight: bold;
 }
 
 .main-text-wrapper h4 {
@@ -211,7 +264,11 @@ h3 {
 
 .youtube {
   display: inline-block;
-  width: 400px
+  width: 50%
+}
+
+.youtube img {
+  width:100%;
 }
 
 iframe {
