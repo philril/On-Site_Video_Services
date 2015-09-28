@@ -1,14 +1,14 @@
 body {
   color:white;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Verdana, Geneva, sans-serif;
-  height:100vh;
+  height:100%;
   width:100%;
-  background-color: gainsboro;
-  font-size:2em;
+  background-color: #31231B;
+  /*font-size:2em;*/
   margin:0px;
-  padding-top:0px;
-  display: flex;
-  flex-direction: column;
+  padding:0px;
+  display: inline-block;
+  /*flex-direction: column;*/
 }
 
 h1 {
@@ -17,7 +17,7 @@ h1 {
 
 a {
   text-decoration: none;
-  color: #373535;
+  color: white;
 }
 
 a:hover {
@@ -35,7 +35,7 @@ img {
 }
 
 .logo_img_nav {
-  width:100px;
+  width:92px;
   margin:10px 10px 10px 10px;
 }
 
@@ -53,15 +53,19 @@ img {
 
 footer {
   height:75px;
-  background-color:#31231b;
-  position:relative;
+  background-color:#291910;
+  display:table;
+  width:100%;
+  /*bottom:0px;*/
+  /*border-top:1px solid #816E63;*/
 }
 
 footer div {
   width:100%;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  display:table-cell;
+  vertical-align: middle;
+  /*top: 50%;*/
+  /*transform: translateY(-50%);*/
   font-size:13px;
   padding:10px;
 }
@@ -77,10 +81,11 @@ footer div p a {
 }
 
 nav {
-  background-color: #31231b;
+  background-color: #291910;
   position:relative;
   font-size: 16px;
-  height:114px
+  height:114px;
+  /*border-bottom: 1px solid #816E63;*/
 }
 
 nav ul {
@@ -102,14 +107,6 @@ nav li {
   height:100%;
 }
 
-/*.vert-center {
-  margin:auto auto;
-  display: table;
-  position: absolute;
-  top: 114px; bottom: 0;
-  left: 0; right: 0;
-}*/
-
 .logo_img {
   width:45%;
   padding:35px;
@@ -120,7 +117,6 @@ nav li {
 }
 
 .sectionbox_1 {
-  /*padding:10px;*/
   height:400px;
   width:100%;
   position:relative;
@@ -149,24 +145,26 @@ nav li {
 .sectionbox_2 {
   padding:10px;
   color:white;
-  background-color: #31231b;
+  /*background-color: #31231b;*/
   font-size: 20px;
   width:100%;
 }
 
 .sectionbox_text {
-  background-color: gainsboro;
+  /*background-color: #31231b;*/
 }
 
 section {
-  overflow: auto;
-  color:#373535;
+  /*overflow: auto;*/
+  /*color:#373535;*/
   width:100%;
-  -webkit-flex:1;
-  flex:1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height:100%;
+  font-size:1.5em;
+  /*-webkit-flex:1;*/
+  /*flex:1;*/
+  /*display: flex;*/
+  /*align-items: center;*/
+  /*justify-content: center;*/
 }
 
 .slick-dots {
@@ -181,14 +179,14 @@ section {
 .title h1 {
   padding-top: 20px;
   padding-bottom:10px;
-  color: black;
+  /*color: black;*/
   text-align: center;
   font-weight: bold;
 }
 
 .title p {
   text-align: center;
-  color:black;
+  /*color:black;*/
 }
 
 .logo-image-wrapper {
@@ -197,7 +195,7 @@ section {
 }
 
 .main-text-wrapper {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
