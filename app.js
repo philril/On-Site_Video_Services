@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-  console.log('hey')
   $('.your-class').slick({
     // setting-name: 'setting-value',
     autoplay:true,
@@ -11,5 +10,9 @@ $(document).ready(function(){
     arrows:true,
     dots:true
   });
+
+  $('.hamburger').click(function(){
+    $('.secondary-nav').toggle()
+  })
 
 });
