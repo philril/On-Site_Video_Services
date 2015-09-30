@@ -1,14 +1,23 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   color:white;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Verdana, Geneva, sans-serif;
-  height:100%;
   width:100%;
   background-color: #31231B;
-  /*font-size:2em;*/
-  margin:0px;
-  padding:0px;
-  display: inline-block;
-  /*flex-direction: column;*/
+  position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
 }
 
 h1 {
@@ -52,12 +61,20 @@ img {
 }
 
 footer {
-  height:75px;
   background-color:#291910;
   display:table;
   width:100%;
-  /*bottom:0px;*/
-  /*border-top:1px solid #816E63;*/
+  bottom:0px;
+  /*position:fixed;*/
+  position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+}
+
+footer, .push {
+  height:75px;
 }
 
 footer div {
@@ -166,7 +183,7 @@ section {
   /*overflow: auto;*/
   /*color:#373535;*/
   width:100%;
-  height:100%;
+  /*height:100%;*/
   font-size:1.5em;
   /*-webkit-flex:1;*/
   /*flex:1;*/
@@ -228,6 +245,7 @@ section {
 
 .main-text-wrapper h3 {
   text-align: center;
+  padding:5px;
 }
 
 h3 {
@@ -276,7 +294,7 @@ h3 {
   width:100%;
 }
 
-iframe {
+video {
   background:rgba(0,0,0,0.5);
   margin:0 auto;
   display: inherit;
@@ -315,7 +333,7 @@ iframe {
   z-index:5;
   display:none;
   height:100%;
-  width: 40%;
+  width: 400px;
   background-color: #291910;
   float: right;
   font-size: 3em;
