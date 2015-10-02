@@ -180,16 +180,8 @@ nav li {
 }
 
 section {
-  /*overflow: auto;*/
-  /*color:#373535;*/
   width:100%;
-  /*height:100%;*/
   font-size:1.5em;
-  /*-webkit-flex:1;*/
-  /*flex:1;*/
-  /*display: flex;*/
-  /*align-items: center;*/
-  /*justify-content: center;*/
 }
 
 .slick-dots {
@@ -200,17 +192,19 @@ section {
   opacity:0.5
 }
 
+.title {
+  padding: 0px 10px 0px 10px;
+}
+
 .title h1 {
   padding-top: 20px;
   padding-bottom:10px;
-  /*color: black;*/
   text-align: center;
   font-weight: bold;
 }
 
 .title p {
   text-align: center;
-  /*color:black;*/
 }
 
 .logo-image-wrapper {
@@ -396,6 +390,19 @@ video {
 
   .hamburger {
     display:block;
+  }
+
+  .list-item {
+    width:100%;
+    font-size: 1.5em
+  }
+
+  .title h1 {
+    font-size: 3em;
+  }
+
+  .title p {
+    font-size: 2em;
   }
 
 }
