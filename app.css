@@ -279,6 +279,10 @@ h3 {
   background: rgba(0,0,0,0.5);
 }
 
+.modal-body {
+  text-align: center;
+}
+
 .youtube {
   display: inline-block;
   width: 50%
@@ -286,6 +290,21 @@ h3 {
 
 .youtube img {
   width:100%;
+}
+
+.close:hover {
+  opacity: 1 !important;
+}
+
+.close {
+  opacity: 0.75 !important;
+}
+
+.close span {
+  font-size: 50px;
+  position: absolute;
+  right: 10px;
+  top:0;
 }
 
 video {

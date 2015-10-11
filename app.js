@@ -15,6 +15,12 @@ $(document).ready(function(){
     $('.secondary-nav').toggle()
   })
 
+  $('.youtube').on('click', function () {
+    $($('#video')[0]).attr('src', 'https://www.youtube.com/embed/k7i9Hz_mTJQ?html5=1')
+  })
 
+  $('.close').on('click', function () {
+    $($('#video')[0]).attr('src', '')
+  })
 
 });
