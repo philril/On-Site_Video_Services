@@ -140,7 +140,8 @@ nav li {
 .sectionbox_1 {
   height: 60%;
   max-height:400px;
-  width:100%;
+  width:960px;
+  margin:0 auto;
   position:relative;
 }
 
