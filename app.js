@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+  $('.your-class').addClass('show')
+
   $('.your-class').slick({
     // setting-name: 'setting-value',
     autoplay:true,

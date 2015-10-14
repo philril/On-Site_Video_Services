@@ -49,15 +49,19 @@ img {
 }
 
 .slick-prev {
-  left: 25px !important
+  left: -40px !important
 }
 
 .slick-next {
-  right: 25px !important
+  right: -40px !important
+}
+
+.slick-dots li button:before {
+  font-size: 10px !important;
 }
 
 .slick-prev:before, .slick-next:before{
-  color: black !important
+  color: white !important
 }
 
 footer {
@@ -66,10 +70,10 @@ footer {
   width:100%;
   bottom:0px;
   position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 1rem;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
 }
 
 footer, .push {
@@ -189,6 +193,10 @@ section {
   padding: 0px 10px 0px 10px;
 }
 
+.title.contact {
+  padding: 0px 10px 100px 10px !important;
+}
+
 .title h1 {
   padding-top: 20px;
   padding-bottom:10px;
@@ -227,7 +235,7 @@ section {
 .list-item {
   display: inline-block;
   width: auto;
-  padding: 30px;
+  padding: 25px;
 }
 
 .list-item.testimonial p:first-child {
@@ -286,6 +294,14 @@ h3 {
   width:100%;
 }
 
+.your-class {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
 .close:hover {
   opacity: 1 !important;
 }
@@ -310,14 +326,6 @@ video {
 .lists {
   margin:0 auto;
   width:70%;
-}
-
-.contact {
-  display:inline-block;
-  padding:5px;
-  width: 30%;
-  border-radius: 50px;
-  background: rgba(0,0,0,0.5);
 }
 
 .carousel-img {
