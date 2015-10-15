@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  $('.your-class').addClass('show')
+  $('.your-class').addClass('show');
 
   $('.your-class').slick({
     // setting-name: 'setting-value',
@@ -16,14 +16,14 @@ $(document).ready(function(){
 
   $('.hamburger').click(function(){
     $('.secondary-nav').toggle()
-  })
+  });
 
   $('.youtube').on('click', function () {
-    $($('#video')[0]).attr('src', 'https://www.youtube.com/embed/k7i9Hz_mTJQ?html5=1')
-  })
+    $($('#video')[0]).attr('src', 'https://www.youtube.com/embed/c--IQCCyfsI?html5=1')
+  });
 
   $('.close').on('click', function () {
     $($('#video')[0]).attr('src', '')
-  })
+  });
 
 });
