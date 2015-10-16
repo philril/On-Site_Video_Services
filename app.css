@@ -311,10 +311,11 @@ h3 {
 }
 
 .close span {
-  font-size: 60px;
+  font-size: 38px;
   position: absolute;
   right: 10px;
-  top:0;
+  top: 10;
+  font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 video {
