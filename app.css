@@ -427,3 +427,28 @@ video {
   }
 
 }
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+
+  nav ul {
+    display:none;
+  }
+
+  .hamburger {
+    display:block;
+  }
+
+  .list-item {
+    width:100%;
+    font-size: 1.5em
+  }
+
+  .title h1 {
+    font-size: 3em;
+  }
+
+  .title p {
+    font-size: 2em;
+  }
+
+}
