@@ -22,7 +22,7 @@ $(document).ready(function(){
     $($('#video')[0]).attr('src', 'https://www.youtube.com/embed/c--IQCCyfsI?html5=1')
   });
 
-  $('.close').on('click', function () {
+  $('.close span').on('click', function () {
     $($('#video')[0]).attr('src', '')
   });
 
