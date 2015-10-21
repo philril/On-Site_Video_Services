@@ -18,12 +18,14 @@ $(document).ready(function(){
     $('.secondary-nav').toggle()
   });
 
-  $('.youtube').on('click', function () {
+  $('.youtube').click(function () {
     $($('#video')[0]).attr('src', 'https://www.youtube.com/embed/c--IQCCyfsI?html5=1')
   });
 
-  $('.close span').on('click', function () {
-    $($('#video')[0]).attr('src', '')
+  $('.close span').click(function () {
+    console.log('hey')
+    // $('#myModal').modal('hide');
+    $($('#video')[0]).attr('src', '');
   });
 
 });

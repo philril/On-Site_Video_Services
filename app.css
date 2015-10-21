@@ -308,11 +308,9 @@ h3 {
 
 .close {
   opacity: 0.75 !important;
-}
-
-.close span {
   font-size: 38px;
   position: absolute;
+  z-index: 100;
   right: 10px;
   top: 10;
   font-family: "Comic Sans MS", cursive, sans-serif;
@@ -429,7 +427,7 @@ video {
 
 }
 
-@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
 
   nav ul {
     display:none;
